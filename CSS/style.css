@@ -1,8 +1,8 @@
 :root {
   --primary-color: #c72727;
-  --secondary-color:#f99500;
-  --light-color:#f3f3f3;
-  --dark-color:#333;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
   --max-width: 1100px;
 }
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-/* Utlity */
+/* Utility */
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 .category {
   display: inline-block;
   color: #fff;
-  font-size: .55rem;
+  font-size: 0.55rem;
   text-transform: uppercase;
-  padding: 0.4rem 0.6rem; 
+  padding: 0.4rem 0.6rem;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-block {
   display: block;
   width: 100%;
+  text-align: center;
 }
 
 .btn:hover {
@@ -111,15 +112,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-dark h1,
-.bg-dark h1,
+.bg-dark h2,
 .bg-dark h3,
-.bg-dark a, 
+.bg-dark a,
 .bg-primary h1,
-.bg-primary h1,
+.bg-primary h2,
 .bg-primary h3,
-.bg-primary a, 
+.bg-primary a,
 .bg-secondary h1,
-.bg-secondary h1,
+.bg-secondary h2,
 .bg-secondary h3,
 .bg-secondary a {
   color: #fff;
@@ -145,7 +146,8 @@ h1, h2, h3, h4, h5, h6 {
 .list li a:hover {
   color: var(--primary-color) !important;
 }
-/* Inner Page grid container */
+
+/* Inner page grid container */
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -196,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark-color);
 }
 
-#main-nav .socail {
+#main-nav .social {
   justify-self: center;
 }
 
@@ -206,7 +208,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Showcase */
-
 #showcase {
   color: #fff;
   background: #333;
@@ -216,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #showcase:before {
   content: '';
-  background: url("/image_resources/head.jpg") no-repeat center center/cover; 
+  background: url('/featured.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -241,8 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-/* Home Articles*/
-
+/* Home Articles */
 #home-articles .articles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #home-articles .articles-container > *:first-child,
-#home-articles .articles-container > *:last-child { 
+#home-articles .articles-container > *:last-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -266,11 +266,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: #eee;
+  background: #eee;
   padding: 0.5rem;
 }
 
-.article .meta .category {
+#article .meta .category {
   margin-top: 0.4rem;
 }
 
